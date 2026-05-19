@@ -1,0 +1,8 @@
+# Ignore IDE and environment files
+.idea/
+venv/
+__pycache__/
+
+# Ignore massive files we don't want on GitHub
+*.joblib
+*.zip
