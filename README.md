@@ -23,6 +23,7 @@ The entire infrastructure runs completely stateless and serverless, utilizing a 
 │
 ▼ (Inference Processing via ExtraTreeRegressor Engine)
 [ Formatted JSON Response ] ──► (HTTP 200 OK back to Client)
+```
 
 * **Ingress:** The client triggers an alert verification by issuing a secure HTTPS POST request.
 
@@ -81,6 +82,7 @@ CloudSentryML/
 │   └── generate_and_train.py   # Offline ML training pipeline script used to train and serialize the model
 ├── .gitignore                  # Active tracking exclusions protecting GitHub from heavy files (.joblib, .zip, venv/)
 └── README.md                   # Comprehensive system architectural design document
+```
 
 ---
 
@@ -107,6 +109,7 @@ Once deployed on AWS, integration verification was handled via programmatic HTTP
   "severity": 9,
   "frequency": 12
 }
+```
 
 * **Expected Response Status: HTTP 200 OK
 
@@ -117,6 +120,7 @@ Once deployed on AWS, integration verification was handled via programmatic HTTP
   "prediction": "True Anomaly",
   "input_received": { "duration": 450, "severity": 9, "frequency": 12 }
 }
+```
 
 #### Test Case B: False Alarm Metric Validation
 
@@ -126,6 +130,7 @@ Once deployed on AWS, integration verification was handled via programmatic HTTP
   "severity": 1,
   "frequency": 2
 }
+```
 
 * **Expected Response Status: HTTP 200 OK
 
@@ -136,6 +141,7 @@ Once deployed on AWS, integration verification was handled via programmatic HTTP
   "prediction": "False Alarm",
   "input_received": { "duration": 25, "severity": 1, "frequency": 2 }
 }
+```
 
 ---
 
