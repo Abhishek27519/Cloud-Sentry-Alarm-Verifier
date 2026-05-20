@@ -111,9 +111,9 @@ Once deployed on AWS, integration verification was handled via programmatic HTTP
 }
 ```
 
-* **Expected Response Status: HTTP 200 OK
+* **Expected Response Status: HTTP 200 OK**
 
-* **Expected Payload Output:
+* **Expected Payload Output:**
 
 ```json
 {
@@ -132,9 +132,9 @@ Once deployed on AWS, integration verification was handled via programmatic HTTP
 }
 ```
 
-* **Expected Response Status: HTTP 200 OK
+* **Expected Response Status: HTTP 200 OK**
 
-* **Expected Payload Output:
+* **Expected Payload Output:**
 
 ```json
 {
